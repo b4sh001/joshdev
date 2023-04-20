@@ -52,7 +52,49 @@
         <!-- mobile menu -->
       </nav>
 
-      <main class="text-white">
+      <main class="">
+        <!-- Login -->
+        <section class="bg-[#f1f1f1] text-black hidden">
+          <div
+            class="h-screen w-full mx-auto bg-transparent flex justify-center items-center px-2">
+            <div
+              class="w-[380px] h-[490px] border-2 bg-white rounded-md shadow-lg">
+              <div class="px-6 py-4">
+                <div class="text-center mb-10">
+                  <h2 class="font-bold text-cyan-600 mb-10">joshdev</h2>
+                  <h3 class="font-semibold mb-2">Sign Up</h3>
+                  <p>
+                    Need an account?
+                    <a class="text-cyan-400" href="#">Get Started</a>
+                  </p>
+                </div>
+                <form action="submit">
+                  <div class="flex flex-col">
+                    <input
+                      class="border rounded-md mb-6 p-2"
+                      type="email"
+                      placeholder="Email" />
+                    <input
+                      class="border rounded-md mb-4 p-2"
+                      type="password"
+                      placeholder="Password" />
+                    <div class="">
+                      <input type="checkbox" />
+                      <label for="remember">Remember Me</label>
+                    </div>
+                  </div>
+                </form>
+                <button
+                  class="border w-full mt-6 py-2 rounded-lg bg-cyan-400 hover:text-white mb-4">
+                  <a class="text-sm" href="#">Sign In</a>
+                </button>
+                <p class="text-sm text-center">Forgot Password</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /login -->
+
         <!-- About -->
         <section class="bg-[#FFFFFF] text-black">
           <div class="h-screen max-w-6xl mx-auto flex items-center">
@@ -94,7 +136,7 @@
 
         <!-- Services -->
         <section
-          class="max-h-full w-full mx-auto bg-[#000000] border-t border-cyan-400 border-opacity-60">
+          class="max-h-full w-full mx-auto bg-[#000000] border-t border-cyan-400 border-opacity-60 text-white">
           <div class="py-10">
             <div class="text-center mb-10">
               <h2 class="font-bold tracking-widest text-2xl text-cyan-500">
@@ -259,7 +301,7 @@
 
         <!-- Projects -->
         <section
-          class="max-h-full w-full mx-auto bg-[#000000] border-t border-cyan-400 border-opacity-60">
+          class="max-h-full w-full mx-auto bg-[#000000] border-t border-cyan-400 border-opacity-60 text-white">
           <div class="py-10">
             <div class="text-center mb-10">
               <h2 class="font-bold tracking-widest text-2xl text-cyan-500">

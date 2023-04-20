@@ -1,3 +1,110 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Montserrat", sans-serif;
+    @apply antialiased text-black;
+  }
+
+  .text-h1 {
+    @apply text-3xl sm:text-5xl;
+  }
+
+  .text-h1--sub {
+    @apply text-xl sm:text-2xl;
+  }
+
+  .text-h2 {
+    @apply text-3xl sm:text-4xl;
+  }
+
+  .text-h2--sub {
+    @apply text-lg sm:text-xl;
+  }
+
+  .text-h3 {
+    @apply text-2xl sm:text-3xl;
+  }
+
+  .text-h3--sub {
+    @apply text-lg sm:text-xl;
+  }
+
+  .primary-button {
+    @apply inline-block w-full py-4 mb-2 text-lg font-bold leading-normal text-center no-underline transition duration-200 ease-out rounded-full sm:w-auto sm:px-8 md:w-auto md:mb-0 hover:opacity-80;
+  }
+
+  .secondary-button {
+    @apply inline-block px-8 py-3 text-base font-bold leading-normal text-center no-underline transition duration-200 ease-out bg-transparent border rounded-full;
+  }
+
+  b,
+  strong {
+    @apply font-bold;
+  }
+
+  .btn-blue {
+    @apply shadow-lg shadow-[#4064E9]/40 bg-[#4064E9] text-white;
+  }
+}
+
+@layer components {
+  .people-hover {
+    @apply relative -mx-14 h-[300px] w-full md:w-[19%];
+  }
+
+  .people-hover:last-child {
+    @apply pb-0;
+  }
+
+  .people-hover__image {
+    @apply absolute bottom-0 mx-auto h-[200px] object-cover grayscale filter group-hover:z-30 group-hover:grayscale-0;
+  }
+
+  .tab-button {
+    @apply px-4 py-4 pb-4 text-base font-medium text-gray-500 border-b-2 border-transparent lg:px-8 hover:opacity-90;
+  }
+
+  .tab-button--active {
+    @apply border-red text-red;
+  }
+
+  .anchor-underline a {
+    @apply underline text-red;
+  }
+
+  .bptab_list {
+    @apply mb-4 mr-4 md:mr-0 md:mb-10 lg:mb-2 lg:bg-[#EDEEEE] lg:py-4 lg:rounded-l-lg cursor-pointer;
+  }
+
+  .bptab_list div {
+    @apply inline-block pl-4 font-medium;
+  }
+
+  .bptab_list--active {
+    @apply lg:bg-white lg:border lg:border-purple;
+    border-right: 3px solid white;
+    margin-right: -0.09rem;
+    z-index: 9;
+    position: relative;
+  }
+
+  .bptab_list--active div {
+    @apply border-l-2 border-purple lg:border-l-0;
+  }
+}
+
+@layer utilities {
+  .masonry {
+    column-count: 2;
+  }
+  .break-inside {
+    break-inside: avoid;
+  }
+}
